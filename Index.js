@@ -12,6 +12,7 @@ const app = express();
 const VenderRote = require('./Router/VendoerRoute');
 
 
+
 app.use(cors());
 app.use(bodyParser.json());
 DOTENV.config()
@@ -32,3 +33,7 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
     console.log(`Successfully connected on port ${PORT}`);
 });
+
+app.use('/', (req, res)=> {
+res,send("<h>I Love chinna</h1>")
+})
