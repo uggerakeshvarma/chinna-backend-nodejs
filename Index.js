@@ -34,6 +34,7 @@ app.listen(PORT, () => {
     console.log(`Successfully connected on port ${PORT}`);
 });
 
-app.use('/', (req, res)=> {
-res,send("<h>I Love chinna</h1>")
-})
+app.use('/', (req, res) => {
+  res.send("<h>I Love chinna</h1>"); 
+});
+
